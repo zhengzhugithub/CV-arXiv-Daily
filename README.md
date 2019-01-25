@@ -2,6 +2,48 @@
 
 **分享计算机视觉每天的arXiv文章，主要集中在目标检测，单目标跟踪，多目标跟踪，人体行为识别，人体姿态估计与跟踪，行人重识别，模型搜索等。每周周末会将本周的Archive起来**
 
+**2019-01-25**
+
+[1] Salient Object Detection文章
+
+Deep Reasoning with Multi-scale Context for Salient Object Detection
+
+论文链接：https://arxiv.org/abs/1901.08362
+
+[2] 交通场景异常检测综述
+
+Anomaly Detection in Road Traffic Using Visual Surveillance: A Survey
+
+论文链接：https://arxiv.org/abs/1901.08292
+
+[3] 3D目标检测
+
+3D Backbone Network for 3D Object Detection
+
+论文链接：https://arxiv.org/abs/1901.08373
+
+[4] 语义分割文章
+
+Application of Decision Rules for Handling Class Imbalance in Semantic Segmentation
+
+论文链接：https://arxiv.org/abs/1901.08394
+
+[5] 目标检测文章
+
+Object Detection based on Region Decomposition and Assembly
+
+论文链接：https://arxiv.org/abs/1901.08225
+
+[6] 牛津的图卷积网络文章
+
+Hypergraph Convolution and Hypergraph Attention
+
+论文链接：https://arxiv.org/abs/1901.08150
+
+
+
+
+
 **2019-01-24**
 
 [1] 京东PoseTrack2018亚军方案的技术报告
