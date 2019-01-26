@@ -2,6 +2,111 @@
 
 **分享计算机视觉每天的arXiv文章，主要集中在目标检测，单目标跟踪，多目标跟踪，人体行为识别，人体姿态估计与跟踪，行人重识别，模型搜索等。每周周末会将本周的Archive起来**
 
+**2019-01-26**
+
+周末arXiv网站没有更新，今天写一下老本行-visual object tracking，总结一下SiamRPN系列文章。
+
+[0] SiamFC文章，对SINT（Siamese Instance Search for Tracking，in CVPR2016）改进，第一个提出用全卷积孪生网络结构来解决tracking问题的paper，可以视为只有一个anchor的SiamRPN
+
+论文题目：Fully-convolutional siamese networks for object tracking
+
+论文地址：https://arxiv.org/abs/1606.09549
+
+项目地址：https://www.robots.ox.ac.uk/~luca/siamese-fc.html
+
+tf实现：https://github.com/torrvision/siamfc-tf
+
+pytorch实现：https://github.com/rafellerc/Pytorch-SiamFC
+
+
+[0.1] 后面的v2版本即CFNet，用cf操作代替了correlation操作。
+
+论文题目：End-To-End Representation Learning for Correlation Filter Based Tracking
+
+论文地址：http://openaccess.thecvf.com/content_cvpr_2017/html/Valmadre_End-To-End_Representation_Learning_CVPR_2017_paper.html
+
+项目地址：http://www.robots.ox.ac.uk/~luca/cfnet.html
+
+MatConvNet实现：https://github.com/bertinetto/cfnet
+
+
+SiamFC之后有诸多的改进工作，例如
+
+[0.2] StructSiam，在跟踪中考虑Local structures
+
+论文题目：Structured Siamese Network for Real-Time Visual Tracking
+
+论文地址：http://openaccess.thecvf.com/content_ECCV_2018/papers/Yunhua_Zhang_Structured_Siamese_Network_ECCV_2018_paper.pdf
+
+[0.3] SiamFC-tri，在Saimese跟踪网络中引入了Triplet Loss
+
+论文题目：Triplet Loss in Siamese Network for Object Tracking
+
+论文地址：http://openaccess.thecvf.com/content_ECCV_2018/papers/Xingping_Dong_Triplet_Loss_with_ECCV_2018_paper.pdf
+
+[0.4] DSiam，动态Siamese网络
+
+论文题目：Learning Dynamic Siamese Network for Visual Object Tracking
+
+论文地址：http://openaccess.thecvf.com/content_ICCV_2017/papers/Guo_Learning_Dynamic_Siamese_ICCV_2017_paper.pdf
+
+代码地址：https://github.com/tsingqguo/DSiam
+
+[0.5] SA-Siam，Twofold Siamese网络
+
+论文题目：A Twofold Siamese Network for Real-Time Object Tracking
+
+论文地址：http://openaccess.thecvf.com/content_cvpr_2018/papers/He_A_Twofold_Siamese_CVPR_2018_paper.pdf
+
+
+[1] SiamRPN文章，将anchor应用在候选区域的每个位置，同时进行分类和回归，one-shot local detection。
+
+论文题目：High Performance Visual Tracking with Siamese Region Proposal Network
+
+论文地址：http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf
+
+项目地址：http://bo-li.info/SiamRPN/
+
+[2] DaSiamRPN, SiamRPN文章的follow-up，重点强调了训练过程中样本不均衡的问题，增加了正样本的种类和有语义的负样本。
+
+论文题目：Distractor-aware Siamese Networks for Visual Object Tracking
+
+论文地址：https://arxiv.org/abs/1808.06048
+
+项目地址：http://bo-li.info/DaSiamRPN/
+
+test code：https://github.com/foolwood/DaSiamRPN
+
+[3] Cascaded SiamRPN，将若干RPN模块cascade起来，同时利用了不同layer的feature。
+
+论文题目：Siamese Cascaded Region Proposal Networks for Real-Time Visual Tracking
+
+论文地址：https://arxiv.org/abs/1812.06148
+
+[4] SiamMask，在SiamRPN的结构中增加了一个mask分支，同时进行tracking和video segmentation。
+
+论文题目：Fast Online Object Tracking and Segmentation: A Unifying Approach
+
+论文地址：https://arxiv.org/abs/1812.05050
+
+项目地址：http://www.robots.ox.ac.uk/~qwang/SiamMask/
+
+[5] SiamRPN++, SiamRPN文章的follow-up，让现代网络例如ResNet在tracking中work了，基本上所有数据集都是SOTA。
+
+论文题目：SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks
+
+论文地址：https://arxiv.org/abs/1812.11703
+
+项目地址：http://bo-li.info/SiamRPN++/
+
+[6] Deeper and Wider SiamRPN，将网络加深加宽来提升性能，重点关注感受野和padding的影响。
+
+论文题目：Deeper and Wider Siamese Networks for Real-Time Visual Tracking
+
+论文地址：https://arxiv.org/abs/1901.01660
+
+test code：https://gitlab.com/MSRA_NLPR/deeper_wider_siamese_trackers
+
 **2019-01-25**
 
 [1] Salient Object Detection文章
