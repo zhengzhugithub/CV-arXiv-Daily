@@ -4,6 +4,71 @@
 
 [2019-01-23~2019-01-26](2019/2019.01.23-2019.01.26.md)
 
+**2019-01-30**
+
+[1] 香侬科技横扫 13 项中文自然语言任务记录的Glyce
+
+论文题目：Glyce: Glyph-vectors for Chinese Character Representations
+
+论文链接：https://arxiv.org/abs/1901.10125
+
+摘要: It is intuitive that NLP tasks for logographic languages like Chinese should benefit from the use of the glyph information in those languages. However, due to the lack of rich pictographic evidence in glyphs and the weak generalization ability of standard computer vision models on character data, an effective way to utilize the glyph information remains to be found. 
+In this paper, we address this gap by presenting the Glyce, the glyph-vectors for Chinese character representations. We make three major innovations: (1) We use historical Chinese scripts (e.g., bronzeware script, seal script, traditional Chinese, etc) to enrich the pictographic evidence in characters; (2) We design CNN structures tailored to Chinese character image processing; and (3) We use image-classification as an auxiliary task in a multi-task learning setup to increase the model's ability to generalize. 
+For the first time, we show that glyph-based models are able to consistently outperform word/char ID-based models in a wide range of Chinese NLP tasks. Using Glyce, we are able to achieve the state-of-the-art performances on 13 (almost all) Chinese NLP tasks, including (1) character-Level language modeling, (2) word-Level language modeling, (3) Chinese word segmentation, (4) name entity recognition, (5) part-of-speech tagging, (6) dependency parsing, (7) semantic role labeling, (8) sentence semantic similarity, (9) sentence intention identification, (10) Chinese-English machine translation, (11) sentiment analysis, (12) document classification and (13) discourse parsing
+
+[2] 
+
+论文题目：Diversity in Faces
+
+论文链接：https://arxiv.org/abs/1901.10436
+
+摘要:  Face recognition is a long standing challenge in the field of Artificial Intelligence (AI). The goal is to create systems that accurately detect, recognize, verify, and understand human faces. There are significant technical hurdles in making these systems accurate, particularly in unconstrained settings due to confounding factors related to pose, resolution, illumination, occlusion, and viewpoint. However, with recent advances in neural networks, face recognition has achieved unprecedented accuracy, largely built on data-driven deep learning methods. While this is encouraging, a critical aspect that is limiting facial recognition accuracy and fairness is inherent facial diversity. Every face is different. Every face reflects something unique about us. Aspects of our heritage - including race, ethnicity, culture, geography - and our individual identify - age, gender, and other visible manifestations of self-expression, are reflected in our faces. We expect face recognition to work equally accurately for every face. Face recognition needs to be fair. As we rely on data-driven methods to create face recognition technology, we need to ensure necessary balance and coverage in training data. However, there are still scientific questions about how to represent and extract pertinent facial features and quantitatively measure facial diversity. Towards this goal, Diversity in Faces (DiF) provides a data set of one million annotated human face images for advancing the study of facial diversity. The annotations are generated using ten well-established facial coding schemes from the scientific literature. The facial coding schemes provide human-interpretable quantitative measures of facial features. We believe that by making the extracted coding schemes available on a large set of faces, we can accelerate research and development towards creating more fair and accurate facial recognition systems. 
+
+[3] PA-GAN
+
+论文题目：PA-GAN: Improving GAN Training by Progressive Augmentation
+
+论文链接：https://arxiv.org/abs/1901.10422
+
+摘要:  Training of Generative Adversarial Networks (GANs) is notoriously fragile, which partially attributed to the discriminator performing well very quickly; its loss converges to zero, providing no reliable backpropagation signal to the generator. In this work we introduce a new technique - progressive augmentation of GANs (PA-GAN) - that helps to mitigate this issue and thus improve the GAN training. The key idea is to gradually increase the task difficulty of the discriminator by progressively augmenting its input or feature space, enabling continuous learning of the generator. We show that the proposed progressive augmentation preserves the original GAN objective, does not bias the optimality of the discriminator and encourages the healthy competition between the generator and discriminator, leading to a better-performing generator. We experimentally demonstrate the effectiveness of PA-GAN across different architectures and on multiple benchmarks for the image generation task. 
+
+[4] TPAMI2019 无监督Re-ID新文
+
+论文题目：Unsupervised Person Re-identification by Deep Asymmetric Metric Embedding
+
+论文链接：https://arxiv.org/abs/1901.10177
+
+摘要: Person re-identification (Re-ID) aims to match identities across non-overlapping camera views. Researchers have proposed many supervised Re-ID models which require quantities of cross-view pairwise labelled data. This limits their scalabilities to many applications where a large amount of data from multiple disjoint camera views is available but unlabelled. Although some unsupervised Re-ID models have been proposed to address the scalability problem, they often suffer from the view-specific bias problem which is caused by dramatic variances across different camera views, e.g., different illumination, viewpoints and occlusion. The dramatic variances induce specific feature distortions in different camera views, which can be very disturbing in finding cross-view discriminative information for Re-ID in the unsupervised scenarios, since no label information is available to help alleviate the bias. We propose to explicitly address this problem by learning an unsupervised asymmetric distance metric based on cross-view clustering. The asymmetric distance metric allows specific feature transformations for each camera view to tackle the specific feature distortions. We then design a novel unsupervised loss function to embed the asymmetric metric into a deep neural network, and therefore develop a novel unsupervised deep framework named the DEep Clustering-based Asymmetric MEtric Learning (DECAMEL). In such a way, DECAMEL jointly learns the feature representation and the unsupervised asymmetric metric. DECAMEL learns a compact cross-view cluster structure of Re-ID data, and thus help alleviate the view-specific bias and facilitate mining the potential cross-view discriminative information for unsupervised Re-ID. Extensive experiments on seven benchmark datasets whose sizes span several orders show the effectiveness of our framework. 
+
+[5] 双流多任务Fashion Recognition
+
+论文题目：Two-Stream Multi-Task Network for Fashion Recognition
+
+论文链接：https://arxiv.org/abs/1901.10172
+ 
+摘要:  In this paper, we present a two-stream multi-task network for fashion recognition. This task is challenging as fashion clothing always contain multiple attributes, which need to be predicted simultaneously for real-time industrial systems. To handle these challenges, we formulate fashion recognition into a multi-task learning problem, including landmark detection, category and attribute classifications, and solve it with the proposed deep convolutional neural network. We design two knowledge sharing strategies which enable information transfer between tasks and improve the overall performance. The proposed model achieves state-of-the-art results on large-scale fashion dataset comparing to the existing methods, which demonstrates its great effectiveness and superiority for fashion recognition. 
+
+[6] 基于注意力机制的单目深度估计
+
+论文题目：Attention-based Context Aggregation Network for Monocular Depth Estimation
+
+论文链接：https://arxiv.org/abs/1901.10137
+
+摘要: Depth estimation is a traditional computer vision task, which plays a crucial role in understanding 3D scene geometry. Recently, deep-convolutional-neural-networks based methods have achieved promising results in the monocular depth estimation field. Specifically, the framework that combines the multi-scale features extracted by the dilated convolution based block (atrous spatial pyramid pooling, ASPP) has gained the significant improvement in the dense labeling task. However, the discretized and predefined dilation rates cannot capture the continuous context information that differs in diverse scenes and easily introduce the grid artifacts in depth estimation. In this paper, we propose an attention-based context aggregation network (ACAN) to tackle these difficulties. Based on the self-attention model, ACAN adaptively learns the task-specific similarities between pixels to model the context information. First, we recast the monocular depth estimation as a dense labeling multi-class classification problem. Then we propose a soft ordinal inference to transform the predicted probabilities to continuous depth values, which can reduce the discretization error (about 1% decrease in RMSE). Second, the proposed ACAN aggregates both the image-level and pixel-level context information for depth estimation, where the former expresses the statistical characteristic of the whole image and the latter extracts the long-range spatial dependencies for each pixel. Third, for further reducing the inconsistency between the RGB image and depth map, we construct an attention loss to minimize their information entropy. We evaluate on public monocular depth-estimation benchmark datasets (including NYU Depth V2, KITTI). The experiments demonstrate the superiority of our proposed ACAN and achieve the competitive results with the state of the arts. 
+
+[7] Re-ID文章，附代码
+
+论文题目：Discovering Underlying Person Structure Pattern with Relative Local Distance for Person Re-identification
+
+论文链接：https://arxiv.org/abs/1901.10100
+
+代码地址：https://github.com/Wanggcong/RLD_codes
+
+摘要: Modeling the underlying person structure for person re-identification (re-ID) is difficult due to diverse deformable poses, changeable camera views and imperfect person detectors. How to exploit underlying person structure information without extra annotations to improve the performance of person re-ID remains largely unexplored. To address this problem, we propose a novel Relative Local Distance (RLD) method that integrates a relative local distance constraint into convolutional neural networks (CNNs) in an end-to-end way. It is the first time that the relative local constraint is proposed to guide the global feature representation learning. Specially, a relative local distance matrix is computed by using feature maps and then regarded as a regularizer to guide CNNs to learn a structure-aware feature representation. With the discovered underlying person structure, the RLD method builds a bridge between the global and local feature representation and thus improves the capacity of feature representation for person re-ID. Furthermore, RLD also significantly accelerates deep network training compared with conventional methods. The experimental results show the effectiveness of RLD on the CUHK03, Market-1501, and DukeMTMC-reID datasets. 
+
+
+
+
 **2019-01-29**
 
 [1] 图森发布的SimpleDet框架
