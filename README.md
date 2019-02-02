@@ -4,6 +4,49 @@
 
 [2019-01-23~2019-01-26](2019/2019.01.23-2019.01.26.md)
 
+**2019-02-01**
+
+[1] 一种新颖的3D Reconstruction方法
+
+论文题目：Pix2Vox: Context-aware 3D Reconstruction from Single and Multi-view Images
+
+论文链接：https://arxiv.org/abs/1901.11153
+
+摘要: Recovering the 3D representation of an object from single-view or multi-view RGB images by deep neural networks has attracted increasing attention in the past few years. Several mainstream works (e.g., 3D-R2N2) use recurrent neural networks (RNNs) to fuse multiple feature maps extracted from input images sequentially. However, when given the same set of input images with different orders, RNN-based approaches are unable to produce consistent reconstruction results. Moreover, due to long-term memory loss, RNNs cannot fully exploit input images to refine reconstruction results. To solve these problems, we propose a novel framework for single-view and multi-view 3D reconstruction, named Pix2Vox. By using a well-designed encoder-decoder, it generates a coarse 3D volume from each input image. Then, a context-aware fusion module is introduced to adaptively select high-quality reconstructions for each part (e.g., table legs) from different coarse 3D volumes to obtain a fused 3D volume. Finally, a refiner further refines the fused 3D volume to generate the final output. Experimental results on the ShapeNet and Pascal 3D+ benchmarks indicate that the proposed Pix2Vox outperforms state-of-the-arts by a large margin. Furthermore, the proposed method is 24 times faster than 3D-R2N2 in terms of backward inference time. The experiments on ShapeNet unseen 3D categories have shown the superior generalization abilities of our method.
+
+[2] Superpixel Segmentation文章
+
+论文题目：Texture-Aware Superpixel Segmentation
+
+论文链接：https://arxiv.org/abs/1901.11111
+
+摘要: Most superpixel methods are based on spatial and color measures at the pixel level. Therefore, they can highly fail to group pixels with similar local texture properties, and need fine parameter tuning to balance the two measures. In this paper, we address these issues with a new Texture-Aware SuperPixel (TASP) segmentation method. TASP locally adjusts its spatial regularity constraint according to the feature variance to accurately segment both smooth and textured areas. A new pixel to superpixel patch-based distance is also proposed to ensure texture homogeneity within created regions. TASP substantially outperforms the segmentation accuracy of state-of-the-art methods on both natural color and texture images.
+
+[3] 
+
+论文题目：Capturing Object Detection Uncertainty in Multi-Layer Grid Maps
+
+论文链接：https://arxiv.org/abs/1901.11284
+
+摘要: We propose a deep convolutional object detector for automated driving applications that also estimates classification, pose and shape uncertainty of each detected object. The input consists of a multi-layer grid map which is well-suited for sensor fusion, free-space estimation and machine learning. Based on the estimated pose and shape uncertainty we approximate object hulls with bounded collision probability which we find helpful for subsequent trajectory planning tasks. We train our models based on the KITTI object detection data set. In a quantitative and qualitative evaluation some models show a similar performance and superior robustness compared to previously developed object detectors. However, our evaluation also points to undesired data set properties which should be addressed when training data-driven models or creating new data sets.
+
+[4] 网络压缩文章
+
+论文题目：Partition Pruning: Parallelization-Aware Pruning for Deep Neural Networks
+
+论文链接：https://arxiv.org/abs/1901.11391
+
+摘要: Parameters of recent neural networks require a huge amount of memory. These parameters are used by neural networks to perform machine learning tasks when processing inputs. To speed up inference, we develop Partition Pruning, an innovative scheme to reduce the parameters used while taking into consideration parallelization. We evaluated the performance and energy consumption of parallel inference of partitioned models, which showed a 7.72x speed up of performance and a 2.73x reduction in the energy used for computing pruned layers of TinyVGG16 in comparison to running the unpruned model on a single accelerator. In addition, our method showed a limited reduction some numbers in accuracy while partitioning fully connected layers.
+
+[5] Hotel Recognition数据集
+
+论文题目：Hotels-50K: A Global Hotel Recognition Dataset
+
+论文链接：https://arxiv.org/abs/1901.11397
+
+摘要: Recognizing a hotel from an image of a hotel room is important for human trafficking investigations. Images directly link victims to places and can help verify where victims have been trafficked, and where their traffickers might move them or others in the future. Recognizing the hotel from images is challenging because of low image quality, uncommon camera perspectives, large occlusions (often the victim), and the similarity of objects (e.g., furniture, art, bedding) across different hotel rooms. 
+To support efforts towards this hotel recognition task, we have curated a dataset of over 1 million annotated hotel room images from 50,000 hotels. These images include professionally captured photographs from travel websites and crowd-sourced images from a mobile application, which are more similar to the types of images analyzed in real-world investigations. We present a baseline approach based on a standard network architecture and a collection of data-augmentation approaches tuned to this problem domain.
+
 **2019-01-31**
 
 [1] ECCV2018 PIRM-SR Challenge 超分辨率比赛亚军方案
