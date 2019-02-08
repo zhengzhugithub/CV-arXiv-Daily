@@ -6,6 +6,53 @@
 
 [2019-01-28~2019-02-01](2019/2019.01.28-2019.02.01.md)
 
+**2019-02-08**
+
+[1] 全景分割文章
+
+论文题目：Single Network Panoptic Segmentation for Street Scene Understanding
+
+作者：Daan de Geus, Panagiotis Meletis, Gijs Dubbelman
+
+论文链接：https://arxiv.org/abs/1902.02678
+
+摘要: In this work, we propose a single deep neural network for panoptic segmentation, for which the goal is to provide each individual pixel of an input image with a class label, as in semantic segmentation, as well as a unique identifier for specific objects in an image, following instance segmentation. Our network makes joint semantic and instance segmentation predictions and combines these to form an output in the panoptic format. This has two main benefits: firstly, the entire panoptic prediction is made in one pass, reducing the required computation time and resources; secondly, by learning the tasks jointly, information is shared between the two tasks, thereby improving performance. Our network is evaluated on two street scene datasets: Cityscapes and Mapillary Vistas. By leveraging information exchange and improving the merging heuristics, we increase the performance of the single network, and achieve a score of 23.9 on the Panoptic Quality (PQ) metric on Mapillary Vistas validation, with an input resolution of 640 x 900 pixels. On Cityscapes validation, our method achieves a PQ score of 45.9 with an input resolution of 512 x 1024 pixels. Moreover, our method decreases the prediction time by a factor of 2 with respect to separate networks.
+
+[2] 自动驾驶中的交通锥检测文章
+
+论文题目：Real-time 3D Traffic Cone Detection for Autonomous Driving
+
+作者：Ankit Dhall, Dengxin Dai, Luc Van Gool
+
+论文链接：https://arxiv.org/abs/1902.02394
+
+项目地址：http://people.ee.ethz.ch/~tracezuerich/TrafficCone/
+
+摘要: Considerable progress has been made in semantic scene understanding of road scenes with monocular cameras. It is, however, mainly related to certain classes such as cars and pedestrians. This work investigates traffic cones, an object class crucial for traffic control in the context of autonomous vehicles. 3D object detection using images from a monocular camera is intrinsically an ill-posed problem. In this work, we leverage the unique structure of traffic cones and propose a pipelined approach to the problem. Specifically, we first detect cones in images by a tailored 2D object detector; then, the spatial arrangement of keypoints on a traffic cone are detected by our deep structural regression network, where the fact that the cross-ratio is projection invariant is leveraged for network regularization; finally, the 3D position of cones is recovered by the classical Perspective n-Point algorithm. Extensive experiments show that our approach can accurately detect traffic cones and estimate their position in the 3D world in real time. The proposed method is also deployed on a real-time, critical system. It runs efficiently on the low-power Jetson TX2, providing accurate 3D position estimates, allowing a race-car to map and drive autonomously on an unseen track indicated by traffic cones. With the help of robust and accurate perception, our race-car won both Formula Student Competitions held in Italy and Germany in 2018, cruising at a top-speed of 54 kmph. Visualization of the complete pipeline, mapping and navigation can be found on our project page.
+
+[3] 讨论CNN中FC必要性的文章
+
+论文题目：Impact of Fully Connected Layers on Performance of Convolutional Neural Networks for Image Classification
+
+作者：S H Shabbeer Basha, Shiv Ram Dubey, Viswanath Pulabaigari, Snehasis Mukherjee
+
+论文链接：https://arxiv.org/abs/1902.02771
+
+代码：https://github.com/shabbeersh/Impact-of-FC-layers
+
+摘要: The Convolutional Neural Networks (CNNs), in domains like computer vision, mostly reduced the need for handcrafted features due to its ability to learn the problem-specific features from the raw input data. However, the selection of dataset-specific CNN architecture, which mostly performed by either experience or expertise is a time-consuming and error-prone process. To automate the process of learning a CNN architecture, this letter attempts at finding the relationship between Fully Connected (FC) layers with some of the characteristics of the datasets. The CNN architectures, and recently data sets also, are categorized as deep, shallow, wide, etc. This letter tries to formalize these terms along with answering the following questions. (i) What is the impact of deeper/shallow architectures on the performance of the CNN w.r.t FC layers?, (ii) How the deeper/wider datasets influence the performance of CNN w.r.t FC layers?, and (iii) Which kind of architecture (deeper/ shallower) is better suitable for which kind of (deeper/ wider) datasets. To address these findings, we have performed experiments with three CNN architectures having different depths. The experiments are conducted by varying the number of FC layers. We used four widely used datasets including CIFAR-10, CIFAR-100, Tiny ImageNet, and CRCHistoPhenotypes to justify our findings in the context of the image classification problem. 
+
+[4] 鱼眼镜头中的人脸检测数据集
+
+论文题目：FDDB-360: Face Detection in 360-degree Fisheye Images
+
+作者：Jianglin Fu, Saeed Ranjbar Alvar, Ivan V. Bajic, Rodney G. Vaughan
+
+论文链接：https://arxiv.org/abs/1902.02777
+
+摘要: 360-degree cameras offer the possibility to cover a large area, for example an entire room, without using multiple distributed vision sensors. However, geometric distortions introduced by their lenses make computer vision problems more challenging. In this paper we address face detection in 360-degree fisheye images. We show how a face detector trained on regular images can be re-trained for this purpose, and we also provide a 360-degree fisheye-like version of the popular FDDB face detection dataset, which we call FDDB-360.
+
+
 **2019-02-07**
 
 [1] 用对抗样本攻击NMS算法的文章
