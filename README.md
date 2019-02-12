@@ -6,6 +6,42 @@
 
 [2019-01-28~2019-02-01](2019/2019.01.28-2019.02.01.md)
 
+**2019-02-11**
+
+[1] Action Prediction文章
+
+论文题目：Skeleton-Based Online Action Prediction Using Scale Selection Network
+
+作者：Jun Liu, Amir Shahroudy, Gang Wang, Ling-Yu Duan, Alex C. Kot
+
+文章链接：https://arxiv.org/abs/1902.03084
+
+摘要：Action prediction is to recognize the class label of an ongoing activity when only a part of it is observed. In this paper, we focus on online action prediction in streaming 3D skeleton sequences. A dilated convolutional network is introduced to model the motion dynamics in temporal dimension via a sliding window over the temporal axis. Since there are significant temporal scale variations in the observed part of the ongoing action at different time steps, a novel window scale selection method is proposed to make our network focus on the performed part of the ongoing action and try to suppress the possible incoming interference from the previous actions at each step. An activation sharing scheme is also proposed to handle the overlapping computations among the adjacent time steps, which enables our framework to run more efficiently. Moreover, to enhance the performance of our framework for action prediction with the skeletal input data, a hierarchy of dilated tree convolutions are also designed to learn the multi-level structured semantic representations over the skeleton joints at each frame. Our proposed approach is evaluated on four challenging datasets. The extensive experiments demonstrate the effectiveness of our method for skeleton-based online action prediction.
+
+[2] 3D Human Pose Estimation文章
+
+论文题目：3D Human Pose Estimation from Deep Multi-View 2D Pose
+
+作者：Steven Schwarcz, Thomas Pollard
+
+文章链接：https://arxiv.org/abs/1902.02841
+
+摘要：Human pose estimation - the process of recognizing a human's limb positions and orientations in a video - has many important applications including surveillance, diagnosis of movement disorders, and computer animation. While deep learning has lead to great advances in 2D and 3D pose estimation from single video sources, the problem of estimating 3D human pose from multiple video sensors with overlapping fields of view has received less attention. When the application allows use of multiple cameras, 3D human pose estimates may be greatly improved through fusion of multi-view pose estimates and observation of limbs that are fully or partially occluded in some views. Past approaches to multi-view 3D pose estimation have used probabilistic graphical models to reason over constraints, including per-image pose estimates, temporal smoothness, and limb length. In this paper, we present a pipeline for multi-view 3D pose estimation of multiple individuals which combines a state-of-art 2D pose detector with a factor graph of 3D limb constraints optimized with belief propagation. We evaluate our results on the TUM-Campus and Shelf datasets for multi-person 3D pose estimation and show that our system significantly out-performs the previous state-of-the-art with a simpler model of limb dependency.
+
+[3] 单目标跟踪文章
+
+论文题目：SiamVGG: Visual Tracking using Deeper Siamese Networks
+
+作者：Yuhong Li, Xiaofan Zhang
+
+文章链接：https://arxiv.org/abs/1902.02804
+
+摘要：Recently, we have seen a rapid development of Deep Neural Network (DNN) based visual tracking solutions. Some trackers combine the DNN-based solutions with Discriminative Correlation Filters (DCF) to extract semantic features and successfully deliver the state-of-the-art tracking accuracy. However, these solutions are highly compute-intensive, which require long processing time, resulting unsecured real-time performance. To deliver both high accuracy and reliable real-time performance, we propose a novel tracker called SiamVGG. It combines a Convolutional Neural Network (CNN) backbone and a cross-correlation operator, and takes advantage of the features from exemplary images for more accurate object tracking. 
+The architecture of SiamVGG is customized from VGG-16, with the parameters shared by both exemplary images and desired input video frames. 
+We demonstrate the proposed SiamVGG on OTB-2013/50/100 and VOT 2015/2016/2017 datasets with the state-of-the-art accuracy while maintaining a decent real-time performance of 50 FPS running on a GTX 1080Ti. Our design can achieve 2% higher Expected Average Overlap (EAO) compared to the ECO and C-COT in VOT2017 Challenge.
+
+
+
 **2019-02-08**
 
 [1] 全景分割文章
