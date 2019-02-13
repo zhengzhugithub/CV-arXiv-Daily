@@ -8,6 +8,87 @@
 
 [2019-02-04~2019-02-08](2019/2019.02.04-2019.02.08.md)
 
+**2019-02-13**
+
+[1] GluonCV 目标检测性能增加秘籍
+
+论文题目：Bag of Freebies for Training Object Detection Neural Networks
+
+作者：Zhi Zhang, Tong He, Hang Zhang, Zhongyuan Zhang, Junyuan Xie, Mu Li
+
+论文链接：https://arxiv.org/abs/1902.04103
+
+摘要: Comparing with enormous research achievements targeting better image classification models, efforts applied to object detector training are dwarfed in terms of popularity and universality. Due to significantly more complex network structures and optimization targets, various training strategies and pipelines are specifically designed for certain detection algorithms and no other. In this work, we explore universal tweaks that help boosting the performance of state-of-the-art object detection models to a new level without sacrificing inference speed. Our experiments indicate that these freebies can be as much as 5% absolute precision increase that everyone should consider applying to object detection training to a certain degree.
+
+[2] Visual Grounding文章
+
+论文题目：You Only Look & Listen Once: Towards Fast and Accurate Visual Grounding
+
+作者：Chaorui Deng, Qi Wu, Guanghui Xu, Zhuliang Yu, Yanwu Xu, Kui Jia, Mingkui Tan
+
+论文链接：https://arxiv.org/abs/1902.04213
+
+代码链接：https://github.com/openblack/rvg
+
+摘要: Visual Grounding (VG) aims to locate the most relevant region in an image, based on a flexible natural language query but not a pre-defined label, thus it can be a more useful technique than object detection in practice. Most state-of-the-art methods in VG operate in a two-stage manner, wherein the first stage an object detector is adopted to generate a set of object proposals from the input image and the second stage is simply formulated as a cross-modal matching problem that finds the best match between the language query and all region proposals. This is rather inefficient because there might be hundreds of proposals produced in the first stage that need to be compared in the second stage, not to mention this strategy performs inaccurately. In this paper, we propose an simple, intuitive and much more elegant one-stage detection based method that joints the region proposal and matching stage as a single detection network. The detection is conditioned on the input query with a stack of novel Relation-to-Attention modules that transform the image-to-query relationship to an relation map, which is used to predict the bounding box directly without proposing large numbers of useless region proposals. During the inference, our approach is about 20x ~ 30x faster than previous methods and, remarkably, it achieves 18% ~ 41% absolute performance improvement on top of the state-of-the-art results on several benchmark datasets.
+
+[3] 在论文中画网络结构图的文章
+
+论文题目：Net2Vis: Transforming Deep Convolutional Networks into Publication-Ready Visualizations
+
+作者：Alex Bäuerle, Timo Ropinski
+
+论文链接：https://arxiv.org/abs/1902.04394
+
+代码链接：https://gitlab.com/Sparkier/Net2Vis
+
+摘要: To properly convey neural network architectures in publications, appropriate visualization techniques are of great importance. While most current deep learning papers contain such visualizations, these are usually handcrafted, which results in a lack of a common visual grammar, as well as a significant time investment. Since these visualizations are often crafted just before publication, they are also prone to contain errors, might deviate from the actual architecture, and are sometimes ambiguous to interpret. Current automatic network visualization toolkits focus on debugging the network itself, and are therefore not ideal for generating publication-ready visualization, as they cater a different level of detail. Therefore, we present an approach to automate this process by translating network architectures specified in Python, into publication-ready network visualizations that can directly be embedded into any publication. To improve the readability of these visualizations, and in order to make them comparable, the generated visualizations obey to a visual grammar, which we have derived based on the analysis of existing network visualizations. Besides carefully crafted visual encodings, our grammar also incorporates abstraction through layer accumulation, as it is often done to reduce the complexity of the network architecture to be communicated. Thus, our approach not only reduces the time needed to generate publication-ready network visualizations, but also enables a unified and unambiguous visualization design.
+
+[4] 3D Instance Segmentation文章
+
+论文题目：MASC: Multi-scale Affinity with Sparse Convolution for 3D Instance Segmentation
+
+作者：Chen Liu, Yasutaka Furukawa
+
+论文链接：https://arxiv.org/abs/1902.04478
+
+代码链接：https://github.com/art-programmer/MASC
+
+摘要: We propose a new approach for 3D instance segmentation based on sparse convolution and point affinity prediction, which indicates the likelihood of two points belonging to the same instance. The proposed network, built upon submanifold sparse convolution [3], processes a voxelized point cloud and predicts semantic scores for each occupied voxel as well as the affinity between neighboring voxels at different scales. A simple yet effective clustering algorithm segments points into instances based on the predicted affinity and the mesh topology. The semantic for each instance is determined by the semantic prediction. Experiments show that our method outperforms the state-of-the-art instance segmentation methods by a large margin on the widely used ScanNet benchmark.
+
+[5] 关于网络结构设计原则的文章
+
+论文题目：Capacity allocation analysis of neural networks: A tool for principled architecture design
+
+作者：Jonathan Donier
+
+论文链接：https://arxiv.org/abs/1902.04485
+
+摘要: Designing neural network architectures is a task that lies somewhere between science and art. For a given task, some architectures are eventually preferred over others, based on a mix of intuition, experience, experimentation and luck. For many tasks, the final word is attributed to the loss function, while for some others a further perceptual evaluation is necessary to assess and compare performance across models. In this paper, we introduce the concept of capacity allocation analysis, with the aim of shedding some light on what network architectures focus their modelling capacity on, when used on a given task. We focus more particularly on spatial capacity allocation, which analyzes a posteriori the effective number of parameters that a given model has allocated for modelling dependencies on a given point or region in the input space, in linear settings. We use this framework to perform a quantitative comparison between some classical architectures on various synthetic tasks. Finally, we consider how capacity allocation might translate in non-linear settings.
+
+
+[6] AlphaZero开源实现ELF OpenGo
+
+论文题目：ELF OpenGo: An Analysis and Open Reimplementation of AlphaZero
+
+作者：Yuandong Tian, Jerry Ma, Qucheng Gong, Shubho Sengupta, Zhuoyuan Chen, James Pinkerton, C. Lawrence Zitnick
+
+论文链接：https://arxiv.org/abs/1902.04522
+
+代码链接：https://facebook.ai/developers/tools/elf-opengo
+
+摘要: The AlphaGo, AlphaGo Zero, and AlphaZero series of algorithms are a remarkable demonstration of deep reinforcement learning's capabilities, achieving superhuman performance in the complex game of Go with progressively increasing autonomy. However, many obstacles remain in the understanding of and usability of these promising approaches by the research community. Toward elucidating unresolved mysteries and facilitating future research, we propose ELF OpenGo, an open-source reimplementation of the AlphaZero algorithm. ELF OpenGo is the first open-source Go AI to convincingly demonstrate superhuman performance with a perfect (20:0) record against global top professionals. We apply ELF OpenGo to conduct extensive ablation studies, and to identify and analyze numerous interesting phenomena in both the model training and in the gameplay inference procedures. Our code, models, selfplay datasets, and auxiliary data are publicly available.
+
+[7] 实时语义分割文章
+
+论文题目：Fast-SCNN: Fast Semantic Segmentation Network
+
+作者：Rudra P K Poudel, Stephan Liwicki, Roberto Cipolla
+
+论文链接：https://arxiv.org/abs/1902.04502
+
+摘要: The encoder-decoder framework is state-of-the-art for offline semantic image segmentation. Since the rise in autonomous systems, real-time computation is increasingly desirable. In this paper, we introduce fast segmentation convolutional neural network (Fast-SCNN), an above real-time semantic segmentation model on high resolution image data (1024x2048px) suited to efficient computation on embedded devices with low memory. Building on existing two-branch methods for fast segmentation, we introduce our `learning to downsample' module which computes low-level features for multiple resolution branches simultaneously. Our network combines spatial detail at high resolution with deep features extracted at lower resolution, yielding an accuracy of 68.0% mean intersection over union at 123.5 frames per second on Cityscapes. We also show that large scale pre-training is unnecessary. We thoroughly validate our metric in experiments with ImageNet pre-training and the coarse labeled data of Cityscapes. Finally, we show even faster computation with competitive results on subsampled inputs, without any network modifications.
+
 **2019-02-12**
 
 [1] activity prediction文章
