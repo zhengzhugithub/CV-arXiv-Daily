@@ -8,6 +8,28 @@
 
 [2019-02-04~2019-02-08](2019/2019.02.04-2019.02.08.md)
 
+**2019-02-14**
+
+[1] Set-based Face Recognition文章
+
+论文题目：Multi-Prototype Networks for Unconstrained Set-based Face Recognition
+
+作者：Jian Zhao, Jianshu Li, Xiaoguang Tu, Fang Zhao, Yuan Xin, Junliang Xing, Hengzhu Liu, Shuicheng Yan, Jiashi Feng
+
+论文链接：https://arxiv.org/abs/1902.04755
+
+摘要: In this paper, we study the challenging unconstrained set-based face recognition problem where each subject face is instantiated by a set of media (images and videos) instead of a single image. Naively aggregating information from all the media within a set would suffer from the large intra-set variance caused by heterogeneous factors (e.g., varying media modalities, poses and illuminations) and fail to learn discriminative face representations. A novel Multi-Prototype Network (MPNet) model is thus proposed to learn multiple prototype face representations adaptively from the media sets. Each learned prototype is representative for the subject face under certain condition in terms of pose, illumination and media modality. Instead of handcrafting the set partition for prototype learning, MPNet introduces a Dense SubGraph (DSG) learning sub-net that implicitly untangles inconsistent media and learns a number of representative prototypes. Qualitative and quantitative experiments clearly demonstrate superiority of the proposed model over state-of-the-arts.
+
+[2] Video Re-ID文章
+
+论文题目：Person Re-identification in Videos by Analyzing Spatio-Temporal Tubes
+
+作者：Sk. Arif Ahmed, Debi Prosad Dogra, Heeseung Choi, Seungho Chae, Ig-Jae Kim
+
+论文链接：https://arxiv.org/abs/1902.04856
+
+摘要: Typical person re-identification frameworks search for k best matches in a gallery of images that are often collected in varying conditions. The gallery may contain image sequences when re-identification is done on videos. However, such a process is time consuming as re-identification has to be carried out multiple times. In this paper, we extract spatio-temporal sequences of frames (referred to as tubes) of moving persons and apply a multi-stage processing to match a given query tube with a gallery of stored tubes recorded through other cameras. Initially, we apply a binary classifier to remove noisy images from the input query tube. In the next step, we use a key-pose detection-based query minimization. This reduces the length of the query tube by removing redundant frames. Finally, a 3-stage hierarchical re-identification framework is used to rank the output tubes as per the matching scores. Experiments with publicly available video re-identification datasets reveal that our framework is better than state-of-the-art methods. It ranks the tubes with an increased CMC accuracy of 6-8% across multiple datasets. Also, our method significantly reduces the number of false positives. A new video re-identification dataset, named Tube-based Reidentification Video Dataset (TRiViD), has been prepared with an aim to help the re-identification research community
+
 **2019-02-13**
 
 [1] GluonCV 目标检测性能增加秘籍
