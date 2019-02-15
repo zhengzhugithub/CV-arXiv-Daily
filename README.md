@@ -8,6 +8,48 @@
 
 [2019-02-04~2019-02-08](2019/2019.02.04-2019.02.08.md)
 
+**2019-02-15**
+
+[1] DeepLab后续之DeeperLab
+
+论文题目：DeeperLab: Single-Shot Image Parser
+
+作者：Tien-Ju Yang, Maxwell D. Collins, Yukun Zhu, Jyh-Jing Hwang, Ting Liu, Xiao Zhang, Vivienne Sze, George Papandreou, Liang-Chieh Chen
+
+论文链接：https://arxiv.org/abs/1902.05093
+
+摘要: We present a single-shot, bottom-up approach for whole image parsing. Whole image parsing, also known as Panoptic Segmentation, generalizes the tasks of semantic segmentation for 'stuff' classes and instance segmentation for 'thing' classes, assigning both semantic and instance labels to every pixel in an image. Recent approaches to whole image parsing typically employ separate standalone modules for the constituent semantic and instance segmentation tasks and require multiple passes of inference. Instead, the proposed DeeperLab image parser performs whole image parsing with a significantly simpler, fully convolutional approach that jointly addresses the semantic and instance segmentation tasks in a single-shot manner, resulting in a streamlined system that better lends itself to fast processing. For quantitative evaluation, we use both the instance-based Panoptic Quality (PQ) metric and the proposed region-based Parsing Covering (PC) metric, which better captures the image parsing quality on 'stuff' classes and larger object instances. We report experimental results on the challenging Mapillary Vistas dataset, in which our single model achieves 31.95% (val) / 31.6% PQ (test) and 55.26% PC (val) with 3 frames per second (fps) on GPU or near real-time speed (22.6 fps on GPU) with reduced accuracy.
+
+[2] Crowd Counting文章
+
+论文题目：Improving Dense Crowd Counting Convolutional Neural Networks using Inverse k-Nearest Neighbor Maps and Multiscale Upsampling
+
+作者：Greg Olmschenk, Hao Tang, Zhigang Zhu
+
+论文链接：https://arxiv.org/abs/1902.05379
+
+摘要: Gatherings of thousands to millions of people occur frequently for an enormous variety of events, and automated counting of these high density crowds is used for safety, management, and measuring significance of these events. In this work, we show that the regularly accepted labeling scheme of crowd density maps for training deep neural networks is less effective than our alternative inverse k-nearest neighbor (ikNN) maps, even when used directly in existing state-of-the-art network structures. We also provide a new network architecture MUD-ikNN, which uses multi-scale upsampling via transposed convolutions to take full advantage of the provided ikNN labeling. This upsampling combined with the ikNN maps further outperforms the existing state-of-the-art methods. The full label comparison emphasizes the importance of the labeling scheme, with the ikNN labeling being particularly effective. We demonstrate the accuracy of our MUD-ikNN network and the ikNN labeling scheme on a variety of datasets.
+
+[3] Multispectral Pedestrian Detection文章
+
+论文题目：Box-level Segmentation Supervised Deep Neural Networks for Accurate and Real-time Multispectral Pedestrian Detection
+
+作者：Yanpeng Cao, Dayan Guan, Yulun Wu, Jiangxin Yang, Yanlong Cao, Michael Ying Yang
+
+论文链接：https://arxiv.org/abs/1902.05291
+
+摘要: Effective fusion of complementary information captured by multi-modal sensors (visible and infrared cameras) enables robust pedestrian detection under various surveillance situations (e.g. daytime and nighttime). In this paper, we present a novel box-level segmentation supervised learning framework for accurate and real-time multispectral pedestrian detection by incorporating features extracted in visible and infrared channels. Specifically, our method takes pairs of aligned visible and infrared images with easily obtained bounding box annotations as input and estimates accurate prediction maps to highlight the existence of pedestrians. It offers two major advantages over the existing anchor box based multispectral detection methods. Firstly, it overcomes the hyperparameter setting problem occurred during the training phase of anchor box based detectors and can obtain more accurate detection results, especially for small and occluded pedestrian instances. Secondly, it is capable of generating accurate detection results using small-size input images, leading to improvement of computational efficiency for real-time autonomous driving applications. Experimental results on KAIST multispectral dataset show that our proposed method outperforms state-of-the-art approaches in terms of both accuracy and speed.
+
+[4] Temporal Action Localization文章
+
+论文题目：Exploring Frame Segmentation Networks for Temporal Action Localization
+
+作者：Ke Yang, Xiaolong Shen, Peng Qiao, Shijie Li, Dongsheng Li, Yong Dou
+
+论文链接：https://arxiv.org/abs/1902.05488
+
+摘要: Temporal action localization is an important task of computer vision. Though many methods have been proposed, it still remains an open question how to predict the temporal location of action segments precisely. Most state-of-the-art works train action classifiers on video segments pre-determined by action proposal. However, recent work found that a desirable model should move beyond segment-level and make dense predictions at a fine granularity in time to determine precise temporal boundaries. In this paper, we propose a Frame Segmentation Network (FSN) that places a temporal CNN on top of the 2D spatial CNNs. Spatial CNNs are responsible for abstracting semantics in spatial dimension while temporal CNN is responsible for introducing temporal context information and performing dense predictions. The proposed FSN can make dense predictions at frame-level for a video clip using both spatial and temporal context information. FSN is trained in an end-to-end manner, so the model can be optimized in spatial and temporal domain jointly. We also adapt FSN to use it in weakly supervised scenario (WFSN), where only video level labels are provided when training. Experiment results on public dataset show that FSN achieves superior performance in both frame-level action localization and temporal action localization.
+
 **2019-02-14**
 
 [1] Set-based Face Recognition文章
