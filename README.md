@@ -8,6 +8,58 @@
 
 [2019-02-04~2019-02-08](2019/2019.02.04-2019.02.08.md)
 
+**2019-02-18**
+
+[1] Lipschitz GAN
+
+论文题目：Lipschitz Generative Adversarial Nets
+
+作者：Zhiming Zhou, Jiadong Liang, Yuxuan Song, Lantao Yu, Hongwei Wang, Weinan Zhang, Yong Yu, Zhihua Zhang
+
+论文链接：https://arxiv.org/abs/1902.05687
+
+摘要: In this paper we study the convergence of generative adversarial networks (GANs) from the perspective of the informativeness of the gradient of the optimal discriminative function. We show that GANs without restriction on the discriminative function space commonly suffer from the problem that the gradient produced by the discriminator is uninformative to guide the generator. By contrast, Wasserstein GAN (WGAN), where the discriminative function is restricted to 1-Lipschitz, does not suffer from such a gradient uninformativeness problem. We further show in the paper that the model with a compact dual form of Wasserstein distance, where the Lipschitz condition is relaxed, also suffers from this issue. This implies the importance of Lipschitz condition and motivates us to study the general formulation of GANs with Lipschitz constraint, which leads to a new family of GANs that we call Lipschitz GANs (LGANs). We show that LGANs guarantee the existence and uniqueness of the optimal discriminative function as well as the existence of a unique Nash equilibrium. We prove that LGANs are generally capable of eliminating the gradient uninformativeness problem. According to our empirical analysis, LGANs are more stable and generate consistently higher quality samples compared with WGAN.
+
+[2] 医学图像分析综述
+
+论文题目：Going Deep in Medical Image Analysis: Concepts, Methods, Challenges and Future Directions
+
+作者：Fouzia Altaf, Syed M. S. Islam, Naveed Akhtar, Naeem K. Janjua
+
+论文链接：https://arxiv.org/abs/1902.05655
+
+摘要: Medical Image Analysis is currently experiencing a paradigm shift due to Deep Learning. This technology has recently attracted so much interest of the Medical Imaging community that it led to a specialized conference in `Medical Imaging with Deep Learning' in the year 2018. This article surveys the recent developments in this direction, and provides a critical review of the related major aspects. We organize the reviewed literature according to the underlying Pattern Recognition tasks, and further sub-categorize it following a taxonomy based on human anatomy. This article does not assume prior knowledge of Deep Learning and makes a significant contribution in explaining the core Deep Learning concepts to the non-experts in the Medical community. Unique to this study is the Computer Vision/Machine Learning perspective taken on the advances of Deep Learning in Medical Imaging. This enables us to single out `lack of appropriately annotated large-scale datasets' as the core challenge (among other challenges) in this research direction. We draw on the insights from the sister research fields of Computer Vision, Pattern Recognition and Machine Learning etc.; where the techniques of dealing with such challenges have already matured, to provide promising directions for the Medical Imaging community to fully harness Deep Learning in the future.
+
+[3] 街景异常事件检测数据集
+
+论文题目：Street Scene: A new dataset and evaluation protocol for video anomaly detection
+
+作者：Barathkumar Ramachandra, Michael Jones
+
+论文链接：https://arxiv.org/abs/1902.05872
+
+摘要: Progress in video anomaly detection research is currently slowed by small datasets that lack a wide variety of activities as well as flawed evaluation criteria. This paper aims to help move this research effort forward by introducing a large and varied new dataset called Street Scene, as well as two new evaluation criteria that provide a better estimate of how an algorithm will perform in practice. In addition to the new dataset and evaluation criteria, we present two variations of a novel baseline video anomaly detection algorithm and show they are much more accurate on Street Scene than two state-of-the-art algorithms from the literature.
+
+[4] 超分辨率文章
+
+论文题目：Lightweight Feature Fusion Network for Single Image Super-Resolution
+
+作者：Wenming Yang, Wei Wang, Xuechen Zhang, Shuifa Sun, Qingmin Liao
+
+论文链接：https://arxiv.org/abs/1902.05694
+
+摘要: Single image super-resolution(SISR) has witnessed great progress as convolutional neural network(CNN) gets deeper and wider. However, enormous parameters hinder its application to real world problems. In this letter, We propose a lightweight feature fusion network (LFFN) that can fully explore multi-scale contextual information and greatly reduce network parameters while maximizing SISR results. LFFN is built on spindle blocks and a softmax feature fusion module (SFFM). Specifically, a spindle block is composed of a dimension extension unit, a feature exploration unit and a feature refinement unit. The dimension extension layer expands low dimension to high dimension and implicitly learns the feature maps which is suitable for the next unit. The feature exploration unit performs linear and nonlinear feature exploration aimed at different feature maps. The feature refinement layer is used to fuse and refine features. SFFM fuses the features from different modules in a self-adaptive learning manner with softmax function, making full use of hierarchical information with a small amount of parameter cost. Both qualitative and quantitative experiments on benchmark datasets show that LFFN achieves favorable performance against state-of-the-art methods with similar parameters.
+
+[5] VQA文章
+
+论文题目：Cycle-Consistency for Robust Visual Question Answering
+
+作者：Meet Shah, Xinlei Chen, Marcus Rohrbach, Devi Parikh
+
+论文链接：https://arxiv.org/abs/1902.05660
+
+摘要: Despite significant progress in Visual Question Answering over the years, robustness of today's VQA models leave much to be desired. We introduce a new evaluation protocol and associated dataset (VQA-Rephrasings) and show that state-of-the-art VQA models are notoriously brittle to linguistic variations in questions. VQA-Rephrasings contains 3 human-provided rephrasings for 40k questions spanning 40k images from the VQA v2.0 validation dataset. As a step towards improving robustness of VQA models, we propose a model-agnostic framework that exploits cycle consistency. Specifically, we train a model to not only answer a question, but also generate a question conditioned on the answer, such that the answer predicted for the generated question is the same as the ground truth answer to the original question. Without the use of additional annotations, we show that our approach is significantly more robust to linguistic variations than state-of-the-art VQA models, when evaluated on the VQA-Rephrasings dataset. In addition, our approach outperforms state-of-the-art approaches on the standard VQA and Visual Question Generation tasks on the challenging VQA v2.0 dataset.
+
 **2019-02-15**
 
 [1] DeepLab后续之DeeperLab
