@@ -8,6 +8,8 @@
 
 [2019-02-04~2019-02-08](2019/2019.02.04-2019.02.08.md)
 
+**2019-02-19**
+
 [1] 遥感图像目标检测
 
 论文题目：R2-CNN: Fast Tiny Object Detection in Large-scale Remote Sensing Images
