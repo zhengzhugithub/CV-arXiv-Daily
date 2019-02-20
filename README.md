@@ -10,6 +10,49 @@
 
 [2019-02-11~2019-02-15](2019/2019.02.11-2019.02.15.md)
 
+**2019-02-20**
+
+[1] 分割图像标注工具FreeLabel
+
+论文题目：FreeLabel: A Publicly Available Annotation Tool based on Freehand Traces
+
+作者：Philipe A. Dias, Zhou Shen, Amy Tabb, Henry Medeiros
+
+论文链接：https://arxiv.org/abs/1902.06806
+
+摘要: Large-scale annotation of image segmentation datasets is often prohibitively expensive, as it usually requires a huge number of worker hours to obtain high-quality results. Abundant and reliable data has been, however, crucial for the advances on image understanding tasks achieved by deep learning models. In this paper, we introduce FreeLabel, an intuitive open-source web interface that allows users to obtain high-quality segmentation masks with just a few freehand scribbles, in a matter of seconds. The efficacy of FreeLabel is quantitatively demonstrated by experimental results on the PASCAL dataset as well as on a dataset from the agricultural domain. Designed to benefit the computer vision community, FreeLabel can be used for both crowdsourced or private annotation and has a modular structure that can be easily adapted for any image dataset.
+
+
+[2] 一分半钟训练AlexNet
+
+论文题目：Optimizing Network Performance for Distributed DNN Training on GPU Clusters: ImageNet/AlexNet Training in 1.5 Minutes
+
+作者：Peng Sun, Wansen Feng, Ruobing Han, Shengen Yan, Yonggang Wen
+
+论文链接：https://arxiv.org/abs/1902.06855
+
+摘要: It is important to scale out deep neural network (DNN) training for reducing model training time. The high communication overhead is one of the major performance bottlenecks for distributed DNN training across multiple GPUs. Our investigations have shown that popular open-source DNN systems could only achieve 2.5 speedup ratio on 64 GPUs connected by 56 Gbps network. To address this problem, we propose a communication backend named GradientFlow for distributed DNN training, and employ a set of network optimization techniques. First, we integrate ring-based allreduce, mixed-precision training, and computation/communication overlap into GradientFlow. Second, we propose lazy allreduce to improve network throughput by fusing multiple communication operations into a single one, and design coarse-grained sparse communication to reduce network traffic by only transmitting important gradient chunks. When training ImageNet/AlexNet on 512 GPUs, our approach achieves 410.2 speedup ratio and completes 95-epoch training in 1.5 minutes, which outperforms existing approaches.
+
+[3] WIDER Face and Pedestrian Challenge 2018官方报告
+
+论文题目：WIDER Face and Pedestrian Challenge 2018: Methods and Results
+
+作者：Chen Change Loy等
+
+论文链接：https://arxiv.org/abs/1902.06854
+
+摘要: This paper presents a review of the 2018 WIDER Challenge on Face and Pedestrian. The challenge focuses on the problem of precise localization of human faces and bodies, and accurate association of identities. It comprises of three tracks: (i) WIDER Face which aims at soliciting new approaches to advance the state-of-the-art in face detection, (ii) WIDER Pedestrian which aims to find effective and efficient approaches to address the problem of pedestrian detection in unconstrained environments, and (iii) WIDER Person Search which presents an exciting challenge of searching persons across 192 movies. In total, 73 teams made valid submissions to the challenge tracks. We summarize the winning solutions for all three tracks. and present discussions on open problems and potential research directions in these topics.
+
+[4] 人体部件检测文章
+
+论文题目：Detector-in-Detector: Multi-Level Analysis for Human-Parts
+
+作者：Xiaojie Li, Lu Yang, Qing Song, Fuqiang Zhou
+
+论文链接：https://arxiv.org/abs/1902.07017
+
+摘要: Vision-based person, hand or face detection approaches have achieved incredible success in recent years with the development of deep convolutional neural network (CNN). In this paper, we take the inherent correlation between the body and body parts into account and propose a new framework to boost up the detection performance of the multi-level objects. In particular, we adopt a region-based object detection structure with two carefully designed detectors to separately pay attention to the human body and body parts in a coarse-to-fine manner, which we call Detector-in-Detector network (DID-Net). The first detector is designed to detect human body, hand, and face. The second detector, based on the body detection results of the first detector, mainly focus on the detection of small hand and face inside each body. The framework is trained in an end-to-end way by optimizing a multi-task loss. Due to the lack of human body, face and hand detection dataset, we have collected and labeled a new large dataset named Human-Parts with 14,962 images and 106,879 annotations. Experiments show that our method can achieve excellent performance on Human-Parts.
+
 **2019-02-19**
 
 [1] 遥感图像目标检测
