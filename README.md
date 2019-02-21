@@ -10,6 +10,70 @@
 
 [2019-02-11~2019-02-15](2019/2019.02.11-2019.02.15.md)
 
+**2019-02-21**
+
+[1] adversarial research toolbox using PyTorch
+
+论文题目：advertorch v0.1: An Adversarial Robustness Toolbox based on PyTorch
+
+作者：Gavin Weiguang Ding, Luyu Wang, Xiaomeng Jin
+
+论文链接：https://arxiv.org/abs/1902.07623
+
+代码链接：https://github.com/BorealisAI/advertorch
+
+摘要: advertorch is a toolbox for adversarial robustness research. It contains various implementations for attacks, defenses and robust training methods. advertorch is built on PyTorch (Paszke et al., 2017), and leverages the advantages of the dynamic computational graph to provide concise and efficient reference implementations. The code is licensed under the LGPL license and is open sourced
+
+[2] 实时语义分割文章
+
+论文题目：An efficient solution for semantic segmentation: ShuffleNet V2 with atrous separable convolutions
+
+作者：Sercan Türkmen, Janne Heikkilä
+
+论文链接：https://arxiv.org/abs/1902.07476
+
+摘要: Assigning a label to each pixel in an image, namely semantic segmentation, has been an important task in computer vision, and has applications in autonomous driving, robotic navigation, localization, and scene understanding. Fully convolutional neural networks have proved to be a successful solution for the task over the years but most of the work being done focuses primarily on accuracy. In this paper, we present a computationally efficient approach to semantic segmentation, meanwhile achieving a high mIOU, 70.33% on Cityscapes challenge. The network proposed is capable of running real-time on mobile devices. In addition, we make our code and model weights publicly available.
+
+[3] 自适应感受野网络组件
+
+论文题目：Spatially-Adaptive Filter Units for Compact and Efficient Deep Neural Networks
+
+作者：Domen Tabernik, Matej Kristan, Aleš Leonardis
+
+论文链接：https://arxiv.org/abs/1902.07474
+
+摘要: Convolutional neural networks excel in a number of computer vision tasks. One of their most crucial architectural elements is the effective receptive field size, that has to be manually set to accommodate a specific task. Standard solutions involve large kernels, down/up-sampling and dilated convolutions. These require testing a variety of dilation and down/up-sampling factors and result in non-compact representations and excessive number of parameters. We address this issue by proposing a new convolution filter composed of displaced aggregation units (DAU). DAUs learn spatial displacements and adapt the receptive field sizes of individual convolution filters to a given problem, thus eliminating the need for hand-crafted modifications. DAUs provide a seamless substitution of convolutional filters in existing state-of-the-art architectures, which we demonstrate on AlexNet, ResNet50, ResNet101, DeepLab and SRN-DeblurNet. The benefits of this design are demonstrated on a variety of computer vision tasks and datasets, such as image classification (ILSVRC 2012), semantic segmentation (PASCAL VOC 2011, Cityscape) and blind image de-blurring (GOPRO). Results show that DAUs efficiently allocate parameters resulting in up to four times more compact networks at similar or better performance.
+
+[4] AAAI-19 Action Recognition文章
+
+论文题目：Learning Transferable Self-attentive Representations for Action Recognition in Untrimmed Videos with Weak Supervision
+
+作者：Xiao-Yu Zhang, Haichao Shi, Changsheng Li, Kai Zheng, Xiaobin Zhu, Lixin Duan
+
+论文链接：https://arxiv.org/abs/1902.07370
+
+摘要: Action recognition in videos has attracted a lot of attention in the past decade. In order to learn robust models, previous methods usually assume videos are trimmed as short sequences and require ground-truth annotations of each video frame/sequence, which is quite costly and time-consuming. In this paper, given only video-level annotations, we propose a novel weakly supervised framework to simultaneously locate action frames as well as recognize actions in untrimmed videos. Our proposed framework consists of two major components. First, for action frame localization, we take advantage of the self-attention mechanism to weight each frame, such that the influence of background frames can be effectively eliminated. Second, considering that there are trimmed videos publicly available and also they contain useful information to leverage, we present an additional module to transfer the knowledge from trimmed videos for improving the classification performance in untrimmed ones. Extensive experiments are conducted on two benchmark datasets (i.e., THUMOS14 and ActivityNet1.3), and experimental results clearly corroborate the efficacy of our method.
+
+[5] AAAI-19 Motion Prediction文章
+
+论文题目：Human Motion Prediction via Learning Local Structure Representations and Temporal Dependencies
+
+作者：Xiao Guo, Jongmoo Choi
+
+论文链接：https://arxiv.org/abs/1902.07367
+
+摘要: Human motion prediction from motion capture data is a classical problem in the computer vision, and conventional methods take the holistic human body as input. These methods ignore the fact that, in various human activities, different body components (limbs and the torso) have distinctive characteristics in terms of the moving pattern. In this paper, we argue local representations on different body components should be learned separately and, based on such idea, propose a network, Skeleton Network (SkelNet), for long-term human motion prediction. Specifically, at each time-step, local structure representations of input (human body) are obtained via SkelNet's branches of component-specific layers, then the shared layer uses local spatial representations to predict the future human pose. Our SkelNet is the first to use local structure representations for predicting the human motion. Then, for short-term human motion prediction, we propose the second network, named as Skeleton Temporal Network (Skel-TNet). Skel-TNet consists of three components: SkelNet and a Recurrent Neural Network, they have advantages in learning spatial and temporal dependencies for predicting human motion, respectively; a feed-forward network that outputs the final estimation. Our methods achieve promising results on the Human3.6M dataset and the CMU motion capture dataset.
+
+[6] 针对小目标检测的数据增强方式
+
+论文题目：Augmentation for small object detection
+
+作者：Mate Kisantal, Zbigniew Wojna, Jakub Murawski, Jacek Naruniec, Kyunghyun Cho
+
+论文链接：https://arxiv.org/abs/1902.07296
+
+摘要: In recent years, object detection has experienced impressive progress. Despite these improvements, there is still a significant gap in the performance between the detection of small and large objects. We analyze the current state-of-the-art model, Mask-RCNN, on a challenging dataset, MS COCO. We show that the overlap between small ground-truth objects and the predicted anchors is much lower than the expected IoU threshold. We conjecture this is due to two factors; (1) only a few images are containing small objects, and (2) small objects do not appear enough even within each image containing them. We thus propose to oversample those images with small objects and augment each of those images by copy-pasting small objects many times. It allows us to trade off the quality of the detector on large objects with that on small objects. We evaluate different pasting augmentation strategies, and ultimately, we achieve 9.7\% relative improvement on the instance segmentation and 7.1\% on the object detection of small objects, compared to the current state of the art method on MS COCO.
+
 **2019-02-20**
 
 [1] 分割图像标注工具FreeLabel
