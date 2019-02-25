@@ -10,6 +10,39 @@
 
 [2019-02-11~2019-02-15](2019/2019.02.11-2019.02.15.md)
 
+**2019-02-25**
+
+[1] MOT文章
+
+论文题目：Online Multi-Object Tracking with Instance-Aware Tracker and Dynamic Model Refreshment
+
+作者：Peng Chu, Heng Fan, Chiu C Tan, Haibin Ling
+
+论文链接：https://arxiv.org/abs/1902.08231
+
+摘要: Recent progresses in model-free single object tracking (SOT) algorithms have largely inspired applying SOT to \emph{multi-object tracking} (MOT) to improve the robustness as well as relieving dependency on external detector. However, SOT algorithms are generally designed for distinguishing a target from its environment, and hence meet problems when a target is spatially mixed with similar objects as observed frequently in MOT. To address this issue, in this paper we propose an instance-aware tracker to integrate SOT techniques for MOT by encoding awareness both within and between target models. In particular, we construct each target model by fusing information for distinguishing target both from background and other instances (tracking targets). To conserve uniqueness of all target models, our instance-aware tracker considers response maps from all target models and assigns spatial locations exclusively to optimize the overall accuracy. Another contribution we make is a dynamic model refreshing strategy learned by a convolutional neural network. This strategy helps to eliminate initialization noise as well as to adapt to the variation of target size and appearance. To show the effectiveness of the proposed approach, it is evaluated on the popular MOT15 and MOT16 challenge benchmarks. On both benchmarks, our approach achieves the best overall performances in comparison with published results.
+
+[2] 多路胶囊网络
+
+论文题目：The Multi-Lane Capsule Network (MLCN)
+
+作者：Vanderson Martins do Rosario, Edson Borin, Mauricio Breternitz Jr
+
+论文链接：https://arxiv.org/abs/1902.08431
+
+摘要: We introduce Multi-Lane Capsule Networks (MLCN), which are a separable and resource efficient organization of Capsule Networks (CapsNet) that allows parallel processing, while achieving high accuracy at reduced cost. A MLCN is composed of a number of (distinct) parallel lanes, each contributing to a dimension of the result, trained using the routing-by-agreement organization of CapsNet. Our results indicate similar accuracy with a much reduced cost in number of parameters for the Fashion-MNIST and Cifar10 datsets. They also indicate that the MLCN outperforms the original CapsNet when using a proposed novel configuration for the lanes. MLCN also has faster training and inference times, being more than two-fold faster than the original CapsNet in the same accelerator.
+
+[3] ICLR 2019对抗网络鲁棒性文章
+
+论文题目：On the Sensitivity of Adversarial Robustness to Input Data Distributions
+
+作者：Gavin Weiguang Ding, Kry Yik Chau Lui, Xiaomeng Jin, Luyu Wang, Ruitong Huang
+
+论文链接：https://arxiv.org/abs/1902.08336
+
+摘要: Neural networks are vulnerable to small adversarial perturbations. Existing literature largely focused on understanding and mitigating the vulnerability of learned models. In this paper, we demonstrate an intriguing phenomenon about the most popular robust training method in the literature, adversarial training: Adversarial robustness, unlike clean accuracy, is sensitive to the input data distribution. Even a semantics-preserving transformations on the input data distribution can cause a significantly different robustness for the adversarial trained model that is both trained and evaluated on the new distribution. Our discovery of such sensitivity on data distribution is based on a study which disentangles the behaviors of clean accuracy and robust accuracy of the Bayes classifier. Empirical investigations further confirm our finding. We construct semantically-identical variants for MNIST and CIFAR10 respectively, and show that standardly trained models achieve comparable clean accuracies on them, but adversarially trained models achieve significantly different robustness accuracies. This counter-intuitive phenomenon indicates that input data distribution alone can affect the adversarial robustness of trained neural networks, not necessarily the tasks themselves. Lastly, we discuss the practical implications on evaluating adversarial robustness, and make initial attempts to understand this complex phenomenon.
+
+
 **2019-02-22**
 
 [1] 眨眼检测数据集
