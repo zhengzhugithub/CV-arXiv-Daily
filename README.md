@@ -10,6 +10,105 @@
 
 [2019-02-11~2019-02-15](2019/2019.02.11-2019.02.15.md)
 
+**2019-02-26**
+
+[1] CVPR 2019 Pose estimation文章，目前SOTA,已经开源
+
+论文题目：Deep High-Resolution Representation Learning for Human Pose Estimation
+
+作者：Ke Sun, Bin Xiao, Dong Liu, Jingdong Wang
+
+论文链接：https://arxiv.org/abs/1902.09212
+
+代码链接：https://github.com/leoxiaobin/deep-high-resolution-net.pytorch
+
+摘要: This is an official pytorch implementation of Deep High-Resolution Representation Learning for Human Pose Estimation. In this work, we are interested in the human pose estimation problem with a focus on learning reliable high-resolution representations. Most existing methods recover high-resolution representations from low-resolution representations produced by a high-to-low resolution network. Instead, our proposed network maintains high-resolution representations through the whole process. We start from a high-resolution subnetwork as the first stage, gradually add high-to-low resolution subnetworks one by one to form more stages, and connect the mutli-resolution subnetworks in parallel. We conduct repeated multi-scale fusions such that each of the high-to-low resolution representations receives information from other parallel representations over and over, leading to rich high-resolution representations. As a result, the predicted keypoint heatmap is potentially more accurate and spatially more precise. We empirically demonstrate the effectiveness of our network through the superior pose estimation results over two benchmark datasets: the COCO keypoint detection dataset and the MPII Human Pose dataset.
+
+[2] CVPR2019 VOS文章
+
+论文题目：FEELVOS: Fast End-to-End Embedding Learning for Video Object Segmentation
+
+作者：Paul Voigtlaender, Yuning Chai, Florian Schroff, Hartwig Adam, Bastian Leibe, Liang-Chieh Chen
+
+论文链接：https://arxiv.org/abs/1902.09513
+
+摘要: Many of the recent successful methods for video object segmentation (VOS) are overly complicated, heavily rely on fine-tuning on the first frame, and/or are slow, and are hence of limited practical use. In this work, we propose FEELVOS as a simple and fast method which does not rely on fine-tuning. In order to segment a video, for each frame FEELVOS uses a semantic pixel-wise embedding together with a global and a local matching mechanism to transfer information from the first frame and from the previous frame of the video to the current frame. In contrast to previous work, our embedding is only used as an internal guidance of a convolutional network. Our novel dynamic segmentation head allows us to train the network, including the embedding, end-to-end for the multiple object segmentation task with a cross entropy loss. We achieve a new state of the art in video object segmentation without fine-tuning on the DAVIS 2017 validation set with a J&F measure of 69.1%.
+
+[3] U-Net+
+
+论文题目：U-NetPlus: A Modified Encoder-Decoder U-Net Architecture for Semantic and Instance Segmentation of Surgical Instrument
+
+作者：S. M. Kamrul Hasan, Cristian A. Linte
+
+论文链接：https://arxiv.org/abs/1902.08994
+
+摘要: Conventional therapy approaches limit surgeons' dexterity control due to limited field-of-view. With the advent of robot-assisted surgery, there has been a paradigm shift in medical technology for minimally invasive surgery. However, it is very challenging to track the position of the surgical instruments in a surgical scene, and accurate detection & identification of surgical tools is paramount. Deep learning-based semantic segmentation in frames of surgery videos has the potential to facilitate this task. In this work, we modify the U-Net architecture named U-NetPlus, by introducing a pre-trained encoder and re-design the decoder part, by replacing the transposed convolution operation with an upsampling operation based on nearest-neighbor (NN) interpolation. To further improve performance, we also employ a very fast and flexible data augmentation technique. We trained the framework on 8 x 225 frame sequences of robotic surgical videos, available through the MICCAI 2017 EndoVis Challenge dataset and tested it on 8 x 75 frame and 2 x 300 frame videos. Using our U-NetPlus architecture, we report a 90.20% DICE for binary segmentation, 76.26% DICE for instrument part segmentation, and 46.07% for instrument type (i.e., all instruments) segmentation, outperforming the results of previous techniques implemented and tested on these data.
+
+[4] Pedestrian Detection文章
+
+论文题目：SSA-CNN: Semantic Self-Attention CNN for Pedestrian Detection
+
+作者：Chengju Zhou, Meiqing Wu, Siew-Kei Lam
+
+论文链接：https://arxiv.org/abs/1902.09080
+
+摘要: Pedestrian detection plays an important role in many applications such as autonomous driving. We propose a method that explores semantic segmentation results as self-attention cues to significantly improve the pedestrian detection performance. Specifically, a multi-task network is designed to jointly learn semantic segmentation and pedestrian detection from image datasets with weak box-wise annotations. The semantic segmentation feature maps are concatenated with corresponding convolution features maps to provide more discriminative features for pedestrian detection and pedestrian classification. By jointly learning segmentation and detection, our proposed pedestrian self-attention mechanism can effectively identify pedestrian regions and suppress backgrounds. In addition, we propose to incorporate semantic attention information from multi-scale layers into deep convolution neural network to boost pedestrian detection. Experiment results show that the proposed method achieves the best detection performance with MR of 6.27% on Caltech dataset and obtain competitive performance on CityPersons dataset while maintaining high computational efficiency.
+
+[5] ICRA2019 机器人Ego-Motion Estimation文章
+
+论文题目：Beyond Photometric Loss for Self-Supervised Ego-Motion Estimation
+
+作者：Tianwei Shen, Zixin Luo, Lei Zhou, Hanyu Deng, Runze Zhang, Tian Fang, Long Quan
+
+论文链接：https://arxiv.org/abs/1902.09103
+
+代码链接：https://github.com/hlzz/DeepMatchVO
+
+摘要: Accurate relative pose is one of the key components in visual odometry (VO) and simultaneous localization and mapping (SLAM). Recently, the self-supervised learning framework that jointly optimizes the relative pose and target image depth has attracted the attention of the community. Previous works rely on the photometric error generated from depths and poses between adjacent frames, which contains large systematic error under realistic scenes due to reflective surfaces and occlusions. In this paper, we bridge the gap between geometric loss and photometric loss by introducing the matching loss constrained by epipolar geometry in a self-supervised framework. Evaluated on the KITTI dataset, our method outperforms the state-of-the-art unsupervised ego-motion estimation methods by a large margin.
+
+[6] Semantic Edge Detection文章
+
+论文题目：Dynamic Feature Fusion for Semantic Edge Detection
+
+作者：Yuan Hu, Yunpeng Chen, Xiang Li, Jiashi Feng
+
+论文链接：https://arxiv.org/abs/1902.09104
+
+摘要: Features from multiple scales can greatly benefit the semantic edge detection task if they are well fused. However, the prevalent semantic edge detection methods apply a fixed weight fusion strategy where images with different semantics are forced to share the same weights, resulting in universal fusion weights for all images and locations regardless of their different semantics or local context. In this work, we propose a novel dynamic feature fusion strategy that assigns different fusion weights for different input images and locations adaptively. This is achieved by a proposed weight learner to infer proper fusion weights over multi-level features for each location of the feature map, conditioned on the specific input. In this way, the heterogeneity in contributions made by different locations of feature maps and input images can be better considered and thus help produce more accurate and sharper edge predictions. We show that our model with the novel dynamic feature fusion is superior to fixed weight fusion and also the naïve location-invariant weight fusion methods, via comprehensive experiments on benchmarks Cityscapes and SBD. In particular, our method outperforms all existing well established methods and achieves new state-of-the-art.
+
+[7] CVPR2019 Action Recognition文章
+
+论文题目：An Attention Enhanced Graph Convolutional LSTM Network for Skeleton-Based Action Recognition
+
+作者：Chenyang Si, Wentao Chen, Wei Wang, Liang Wang, Tieniu Tan
+
+论文链接：https://arxiv.org/abs/1902.09130
+
+摘要: Skeleton-based action recognition is an important task that requires the adequate understanding of movement characteristics of a human action from the given skeleton sequence. Recent studies have shown that exploring spatial and temporal features of the skeleton sequence is vital for this task. Nevertheless, how to effectively extract discriminative spatial and temporal features is still a challenging problem. In this paper, we propose a novel Attention Enhanced Graph Convolutional LSTM Network (AGC-LSTM) for human action recognition from skeleton data. The proposed AGC-LSTM can not only capture discriminative features in spatial configuration and temporal dynamics but also explore the co-occurrence relationship between spatial and temporal domains. We also present a temporal hierarchical architecture to increases temporal receptive fields of the top AGC-LSTM layer, which boosts the ability to learn the high-level semantic representation and significantly reduces the computation cost. Furthermore, to select discriminative spatial information, the attention mechanism is employed to enhance information of key joints in each AGC-LSTM layer. Experimental results on two datasets are provided: NTU RGB+D dataset and Northwestern-UCLA dataset. The comparison results demonstrate the effectiveness of our approach and show that our approach outperforms the state-of-the-art methods on both datasets.
+
+[8] AAAI2019 Optical Flow文章
+
+论文题目：DDFlow: Learning Optical Flow with Unlabeled Data Distillation
+
+作者：Pengpeng Liu, Irwin King, Michael R.Lyu, Jia Xu
+
+论文链接：https://arxiv.org/abs/1902.09145
+
+摘要: We present DDFlow, a data distillation approach to learning optical flow estimation from unlabeled data. The approach distills reliable predictions from a teacher network, and uses these predictions as annotations to guide a student network to learn optical flow. Unlike existing work relying on hand-crafted energy terms to handle occlusion, our approach is data-driven, and learns optical flow for occluded pixels. This enables us to train our model with a much simpler loss function, and achieve a much higher accuracy. We conduct a rigorous evaluation on the challenging Flying Chairs, MPI Sintel, KITTI 2012 and 2015 benchmarks, and show that our approach significantly outperforms all existing unsupervised learning methods, while running at real time.
+
+
+[9] RGB to Mech 文章
+
+论文题目：End-to-end Hand Mesh Recovery from a Monocular RGB Image
+
+作者：Xiong Zhang, Qiang Li, Wenbo Zhang, Wen Zheng
+
+论文链接：https://arxiv.org/abs/1902.09305
+
+代码链接：https://github.com/MandyMo/HAMR
+
+摘要: In this paper, we present a HAnd Mesh Recovery (HAMR) framework to tackle the problem of reconstructing the full 3D mesh of a human hand from a single RGB image. In contrast to existing research on 2D or 3D hand pose estimation from RGB or/and depth image data, HAMR can provide a more expressive and useful mesh representation for monocular hand image understanding. In particular, the mesh representation is achieved by parameterizing a generic 3D hand model with shape and relative 3D joint angles. By utilizing this mesh representation, we can easily compute the 3D joint locations via linear interpolations between the vertexes of the mesh, while obtain the 2D joint locations with a projection of the 3D joints.
+
 **2019-02-25**
 
 [1] MOT文章
