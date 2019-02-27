@@ -10,6 +10,82 @@
 
 [2019-02-11~2019-02-15](2019/2019.02.11-2019.02.15.md)
 
+**2019-02-27**
+
+[1] CVPR2019 检测新文
+
+论文题目：Generalized Intersection over Union: A Metric and A Loss for Bounding Box Regression
+
+作者：Hamid Rezatofighi, Nathan Tsoi, JunYoung Gwak, Amir Sadeghian, Ian Reid, Silvio Savarese
+
+论文链接：https://arxiv.org/abs/1902.09630
+
+摘要: Intersection over Union (IoU) is the most popular evaluation metric used in the object detection benchmarks. However, there is a gap between optimizing the commonly used distance losses for regressing the parameters of a bounding box and maximizing this metric value. The optimal objective for a metric is the metric itself. In the case of axis-aligned 2D bounding boxes, it can be shown that IoU can be directly used as a regression loss. However, IoU has a plateau making it infeasible to optimize in the case of non-overlapping bounding boxes. In this paper, we address the weaknesses of IoU by introducing a generalized version as both a new loss and a new metric. By incorporating this generalized IoU (GIoU) as a loss into the state-of-the art object detection frameworks, we show a consistent improvement on their performance using both the standard, IoU based, and new, GIoU based, performance measures on popular object detection benchmarks such as PASCAL VOC and MS COCO.
+
+[2] CVPR2019 分类新文
+
+论文题目：Learning a Deep ConvNet for Multi-label Classification with Partial Labels
+
+作者：Thibaut Durand, Nazanin Mehrasa, Greg Mori
+
+论文链接：https://arxiv.org/abs/1902.09720
+
+摘要: Deep ConvNets have shown great performance for single-label image classification (e.g. ImageNet), but it is necessary to move beyond the single-label classification task because pictures of everyday life are inherently multi-label. Multi-label classification is a more difficult task than single-label classification because both the input images and output label spaces are more complex. Furthermore, collecting clean multi-label annotations is more difficult to scale-up than single-label annotations. To reduce the annotation cost, we propose to train a model with partial labels i.e. only some labels are known per image. We first empirically compare different labeling strategies to show the potential for using partial labels on multi-label datasets. Then to learn with partial labels, we introduce a new classification loss that exploits the proportion of known labels per example. Our approach allows the use of the same training settings as when learning with all the annotations. We further explore several curriculum learning based strategies to predict missing labels. Experiments are performed on three large-scale multi-label datasets: MS COCO, NUS-WIDE and Open Images.
+
+[3] CVPR2019 3D detection新文
+
+论文题目：Stereo R-CNN based 3D Object Detection for Autonomous Driving
+
+作者：Peiliang Li, Xiaozhi Chen, Shaojie Shen
+
+论文链接：https://arxiv.org/abs/1902.09738
+
+摘要: We propose a 3D object detection method for autonomous driving by fully exploiting the sparse and dense, semantic and geometry information in stereo imagery. Our method, called Stereo R-CNN, extends Faster R-CNN for stereo inputs to simultaneously detect and associate object in left and right images. We add extra branches after stereo Region Proposal Network (RPN) to predict sparse keypoints, viewpoints, and object dimensions, which are combined with 2D left-right boxes to calculate a coarse 3D object bounding box. We then recover the accurate 3D bounding box by a region-based photometric alignment using left and right RoIs. Our method does not require depth input and 3D position supervision, however, outperforms all existing fully supervised image-based methods. Experiments on the challenging KITTI dataset show that our method outperforms the state-of-the-art stereo-based method by around 30% AP on both 3D detection and 3D localization tasks. Code will be made publicly available.
+
+[4] CVPR2019 3D Reconstruction新文
+
+论文题目：Single-Image Piece-wise Planar 3D Reconstruction via Associative Embedding
+
+作者：Zehao Yu, Jia Zheng, Dongze Lian, Zihan Zhou, Shenghua Gao
+
+论文链接：https://arxiv.org/abs/1902.09777
+
+代码链接：https://github.com/svip-lab/PlanarReconstruction
+
+摘要: Single-image piece-wise planar 3D reconstruction aims to simultaneously segment plane instances and recover 3D plane parameters from an image. Most recent approaches leverage convolutional neural networks (CNNs) and achieve promising results. However, these methods are limited to detecting a fixed number of planes with certain learned order. To tackle this problem, we propose a novel two-stage method based on associative embedding, inspired by its recent success in instance segmentation. In the first stage, we train a CNN to map each pixel to an embedding space where pixels from the same plane instance have similar embeddings. Then, the plane instances are obtained by grouping the embedding vectors in planar regions via an efficient mean shift clustering algorithm. In the second stage, we estimate the parameter for each plane instance by considering both pixel-level and instance-level consistencies. With the proposed method, we are able to detect an arbitrary number of planes. Extensive experiments on public datasets validate the effectiveness and efficiency of our method. Furthermore, our method runs at 30 fps at the testing time, thus could facilitate many real-time applications such as visual SLAM and human-robot interaction.
+
+[5] CVPR2019 点云分割新文
+
+论文题目：Associatively Segmenting Instances and Semantics in Point Clouds
+
+作者：Xinlong Wang, Shu Liu, Xiaoyong Shen, Chunhua Shen, Jiaya Jia
+
+论文链接：https://arxiv.org/abs/1902.09852
+
+代码链接：https://github.com/WXinlong/ASIS
+
+摘要: A 3D point cloud describes the real scene precisely and intuitively.To date how to segment diversified elements in such an informative 3D scene is rarely discussed. In this paper, we first introduce a simple and flexible framework to segment instances and semantics in point clouds simultaneously. Then, we propose two approaches which make the two tasks take advantage of each other, leading to a win-win situation. Specifically, we make instance segmentation benefit from semantic segmentation through learning semantic-aware point-level instance embedding. Meanwhile, semantic features of the points belonging to the same instance are fused together to make more accurate per-point semantic predictions. Our method largely outperforms the state-of-the-art method in 3D instance segmentation along with a significant improvement in 3D semantic segmentation.
+
+[6] CVPR2019 3D Human Pose Estimation新文
+
+论文题目：RepNet: Weakly Supervised Training of an Adversarial Reprojection Network for 3D Human Pose Estimation
+
+作者：Bastian Wandt, Bodo Rosenhahn
+
+论文链接：https://arxiv.org/abs/1902.09868
+
+摘要: This paper addresses the problem of 3D human pose estimation from single images. While for a long time human skeletons were parameterized and fitted to the observation by satisfying a reprojection error, nowadays researchers directly use neural networks to infer the 3D pose from the observations. However, most of these approaches ignore the fact that a reprojection constraint has to be satisfied and are sensitive to overfitting. We tackle the overfitting problem by ignoring 2D to 3D correspondences. This efficiently avoids a simple memorization of the training data and allows for a weakly supervised training. One part of the proposed reprojection network (RepNet) learns a mapping from a distribution of 2D poses to a distribution of 3D poses using an adversarial training approach. Another part of the network estimates the camera. This allows for the definition of a network layer that performs the reprojection of the estimated 3D pose back to 2D which results in a reprojection loss function. Our experiments show that RepNet generalizes well to unknown data and outperforms state-of-the-art methods when applied to unseen data. Moreover, our implementation runs in real-time on a standard desktop PC.
+
+[7] CVPR2019 3D Face新文
+
+论文题目：Disentangled Representation Learning for 3D Face Shape
+
+作者：Zi-Hang Jiang, Qianyi Wu, Keyu Chen, Juyong Zhang
+
+论文链接：https://arxiv.org/abs/1902.09887
+
+摘要: In this paper, we present a novel strategy to design disentangled 3D face shape representation. Specifically, a given 3D face shape is decomposed into identity part and expression part, which are both encoded and decoded in a nonlinear way. To solve this problem, we propose an attribute decomposition framework for 3D face mesh. To better represent face shapes which are usually nonlinear deformed between each other, the face shapes are represented by a vertex based deformation representation rather than Euclidean coordinates. The experimental results demonstrate that our method has better performance than existing methods on decomposing the identity and expression parts. Moreover, more natural expression transfer results can be achieved with our method than existing methods.
+
 **2019-02-26**
 
 [1] CVPR 2019 Pose estimation文章，目前SOTA,已经开源
