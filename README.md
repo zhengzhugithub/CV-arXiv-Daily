@@ -10,6 +10,48 @@
 
 [2019-02-11~2019-02-15](2019/2019.02.11-2019.02.15.md)
 
+**2019-03-01**
+
+[1] CVPR 2019 聚类新文
+
+论文题目：Efficient Parameter-free Clustering Using First Neighbor Relations
+
+作者：M. Saquib Sarfraz, Vivek Sharma, Rainer Stiefelhagen
+
+论文链接：https://arxiv.org/abs/1902.11266
+
+摘要: We present a new clustering method in the form of a single clustering equation that is able to directly discover groupings in the data. The main proposition is that the first neighbor of each sample is all one needs to discover large chains and finding the groups in the data. In contrast to most existing clustering algorithms our method does not require any hyper-parameters, distance thresholds and/or the need to specify the number of clusters. The proposed algorithm belongs to the family of hierarchical agglomerative methods. The technique has a very low computational overhead, is easily scalable and applicable to large practical problems. Evaluation on well known datasets from different domains ranging between 1077 and 8.1 million samples shows substantial performance gains when compared to the existing clustering techniques.
+
+[2] CVPR 2019 表示学习新文
+
+论文题目：End-to-End Efficient Representation Learning via Cascading Combinatorial Optimization
+
+作者：Yeonwoo Jeong, Yoonsuing Kim, Hyun Oh Song
+
+论文链接：https://arxiv.org/abs/1902.10990
+
+摘要: We develop hierarchically quantized efficient embedding representations for similarity-based search and show that this representation provides not only the state of the art performance on the search accuracy but also provides several orders of speed up during inference. The idea is to hierarchically quantize the representation so that the quantization granularity is greatly increased while maintaining the accuracy and keeping the computational complexity low. We also show that the problem of finding the optimal sparse compound hash code respecting the hierarchical structure can be optimized in polynomial time via minimum cost flow in an equivalent flow network. This allows us to train the method end-to-end in a mini-batch stochastic gradient descent setting. Our experiments on Cifar100 and ImageNet datasets show the state of the art search accuracy while providing several orders of magnitude search speedup respectively over exhaustive linear search over the dataset.
+
+[3] CVPR 2019 Text-to-Image新文
+
+论文题目：Object-driven Text-to-Image Synthesis via Adversarial Training
+
+作者：Wenbo Li, Pengchuan Zhang, Lei Zhang, Qiuyuan Huang, Xiaodong He, Siwei Lyu, Jianfeng Gao
+
+论文链接：https://arxiv.org/abs/1902.10740
+
+摘要: In this paper, we propose Object-driven Attentive Generative Adversarial Newtorks (Obj-GANs) that allow object-centered text-to-image synthesis for complex scenes. Following the two-step (layout-image) generation process, a novel object-driven attentive image generator is proposed to synthesize salient objects by paying attention to the most relevant words in the text description and the pre-generated semantic layout. In addition, a new Fast R-CNN based object-wise discriminator is proposed to provide rich object-wise discrimination signals on whether the synthesized object matches the text description and the pre-generated layout. The proposed Obj-GAN significantly outperforms the previous state of the art in various metrics on the large-scale COCO benchmark, increasing the Inception score by 27% and decreasing the FID score by 11%. A thorough comparison between the traditional grid attention and the new object-driven attention is provided through analyzing their mechanisms and visualizing their attention layers, showing insights of how the proposed model generates complex scenes in high quality.
+
+[4] CVPR 2019 人脸新文
+
+论文题目：Joint Face Detection and Facial Motion Retargeting for Multiple Faces
+
+作者：Bindita Chaudhuri, Noranart Vesdapunt, Baoyuan Wang
+
+论文链接：https://arxiv.org/abs/1902.10744
+
+摘要: Facial motion retargeting is an important problem in both computer graphics and vision, which involves capturing the performance of a human face and transferring it to another 3D character. Learning 3D morphable model (3DMM) parameters from 2D face images using convolutional neural networks is common in 2D face alignment, 3D face reconstruction etc. However, existing methods either require an additional face detection step before retargeting or use a cascade of separate networks to perform detection followed by retargeting in a sequence. In this paper, we present a single end-to-end network to jointly predict the bounding box locations and 3DMM parameters for multiple faces. First, we design a novel multitask learning framework that learns a disentangled representation of 3DMM parameters for a single face. Then, we leverage the trained single face model to generate ground truth 3DMM parameters for multiple faces to train another network that performs joint face detection and motion retargeting for images with multiple faces. Experimental results show that our joint detection and retargeting network has high face detection accuracy and is robust to extreme expressions and poses while being faster than state-of-the-art methods.
+
 **2019-02-28**
 
 [1] CVPR2019 Video Caption新文
