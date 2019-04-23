@@ -14,6 +14,30 @@
 
 [2019-02-25~2019-03-01](2019/2019.02.25-2019.03.01.md)
 
+**2019-04-23**
+
+[1] NAS for face
+
+论文题目：Neural Architecture Search for Deep Face Recognition
+
+作者：Ning Zhu, Xiaolong Bai
+
+论文链接：https://arxiv.org/abs/1904.09523
+
+摘要: By the widespread popularity of electronic devices, the emergence of biometric technology has brought significant convenience to user authentication compared with the traditional password and mode unlocking. Among many biological characteristics, the face is a universal and irreplaceable feature that does not need too much cooperation and can significantly improve the user's experience at the same time. Face recognition is one of the main functions of electronic equipment propaganda. Hence it's virtually worth researching in computer vision. Previous work in this field has focused on two directions: converting loss function to improve recognition accuracy in traditional deep convolution neural networks (Resnet); combining the latest loss function with the lightweight system (MobileNet) to reduce network size at the minimal expense of accuracy. But none of these has changed the network structure. With the development of AutoML, neural architecture search (NAS) has shown excellent performance in the benchmark of image classification. In this paper, we integrate NAS technology into face recognition to customize a more suitable network. We quote the framework of neural architecture search which trains child and controller network alternately. At the same time, we mutate NAS by incorporating evaluation latency into rewards of reinforcement learning and utilize policy gradient algorithm to search the architecture automatically with the most classical cross-entropy loss. The network architectures we searched out have got state-of-the-art accuracy in the large-scale face dataset, which achieves 98.77% top-1 in MS-Celeb-1M and 99.89% in LFW with relatively small network size. To the best of our knowledge, this proposal is the first attempt to use NAS to solve the problem of Deep Face Recognition and achieve the best results in this domain.
+
+[2] 一种新的Normalization方法SW
+
+论文题目：Switchable Whitening for Deep Representation Learning
+
+作者：Xingang Pan, Xiaohang Zhan, Jianping Shi, Xiaoou Tang, Ping Luo
+
+论文链接：https://arxiv.org/abs/1904.09739
+
+摘要: Normalization methods are essential components in convolutional neural networks (CNNs). They either standardize or whiten data using statistics estimated in predefined sets of pixels. Unlike existing works that design normalization techniques for specific tasks, we propose Switchable Whitening (SW), which provides a general form unifying different whitening methods as well as standardization methods. SW learns to switch among these operations in an end-to-end manner. It has several advantages. First, SW adaptively selects appropriate whitening or standardization statistics for different tasks (see Fig.1), making it well suited for a wide range of tasks without manual design. Second, by integrating benefits of different normalizers, SW shows consistent improvements over its counterparts in various challenging benchmarks. Third, SW serves as a useful tool for understanding the characteristics of whitening and standardization techniques. We show that SW outperforms other alternatives on image classification (CIFAR-10/100, ImageNet), semantic segmentation (ADE20K, Cityscapes), domain adaptation (GTA5, Cityscapes), and image style transfer (COCO). For example, without bells and whistles, we achieve state-of-the-art performance with 45.33% mIoU on the ADE20K dataset. Code and models will be released.
+
+
+
 **2019-04-03**
 
 [1] FAIR Kaiming等人的NAS文章
