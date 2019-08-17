@@ -14,6 +14,41 @@
 
 [2019-02-25~2019-03-01](2019/2019.02.25-2019.03.01.md)
 
+**2019-08-16**
+
+[1] FastPose人体姿态估计与跟踪算法
+
+论文题目：FastPose: Towards Real-time Pose Estimation and Tracking via Scale-normalized Multi-task Networks
+
+作者：Jiabin Zhang, Zheng Zhu, Wei Zou, Peng Li, Yanwei Li, Hu Su, Guan Huang
+
+论文链接：https://arxiv.org/abs/1908.05593
+
+摘要: Both accuracy and efficiency are significant for pose estimation and tracking in videos. State-of-the-art performance is dominated by two-stages top-down methods. Despite the leading results, these methods are impractical for real-world applications due to their separated architectures and complicated calculation. This paper addresses the task of articulated multi-person pose estimation and tracking towards real-time speed. An end-to-end multi-task network (MTN) is designed to perform human detection, pose estimation, and person re-identification (Re-ID) tasks simultaneously. To alleviate the performance bottleneck caused by scale variation problem, a paradigm which exploits scale-normalized image and feature pyramids (SIFP) is proposed to boost both performance and speed. Given the results of MTN, we adopt an occlusion-aware Re-ID feature strategy in the pose tracking module, where pose information is utilized to infer the occlusion state to make better use of Re-ID feature. In experiments, we demonstrate that the pose estimation and tracking performance improves steadily utilizing SIFP through different backbones. Using ResNet-18 and ResNet-50 as backbones, the overall pose tracking framework achieves competitive performance with 29.4 FPS and 12.2 FPS, respectively. Additionally, occlusion-aware Re-ID feature decreases the identification switches by 37% in the pose tracking process.
+
+
+[2] R3Det检测算法
+
+论文题目：R3Det: Refined Single-Stage Detector with Feature Refinement for Rotating Object
+
+作者：Xue Yang, Qingqing Liu, Junchi Yan, Ang Li
+
+论文链接：https://arxiv.org/abs/1908.05612
+
+摘要: Rotation detection is a challenging task due to the difficulties of locating the multi-angle objects and separating them accurately and quickly from the background. Though considerable progress has been made, there still exist challenges for rotating objects with large aspect ratio, dense distribution and category extremely imbalance. In this paper, we propose an end-to-end refined single-stage rotation detector for fast and accurate positioning objects. Considering the shortcoming of feature misalignment in the current refined single-stage detector, we design a feature refinement module to improve detection performance, which is especially effective in the long tail data set. The key idea of feature refinement module is to re-encode the position information of the current refined bounding box to the corresponding feature points through feature interpolation to realize feature reconstruction and alignment. Extensive experiments on two remote sensing public datasets DOTA, HRSC2016 as well as scene text data ICDAR2015 show the state-of-the-art accuracy and speed of our detector. Source code and the models will be made public available upon the publish of the paper.
+
+[3] SAST文本检测算法
+
+论文题目：A Single-Shot Arbitrarily-Shaped Text Detector based on Context Attended Multi-Task Learning
+
+作者：Pengfei Wang, Chengquan Zhang, Fei Qi, Zuming Huang, Mengyi En, Junyu Han, Jingtuo Liu, Errui Ding, Guangming Shi
+
+论文链接：https://arxiv.org/abs/1908.05498
+
+摘要: Detecting scene text of arbitrary shapes has been a challenging task over the past years. In this paper, we propose a novel segmentation-based text detector, namely SAST, which employs a context attended multi-task learning framework based on a Fully Convolutional Network (FCN) to learn various geometric properties for the reconstruction of polygonal representation of text regions. Taking sequential characteristics of text into consideration, a Context Attention Block is introduced to capture long-range dependencies of pixel information to obtain a more reliable segmentation. In post-processing, a Point-to-Quad assignment method is proposed to cluster pixels into text instances by integrating both high-level object knowledge and low-level pixel information in a single shot. Moreover, the polygonal representation of arbitrarily-shaped text can be extracted with the proposed geometric properties much more effectively. Experiments on several benchmarks, including ICDAR2015, ICDAR2017-MLT, SCUT-CTW1500, and Total-Text, demonstrate that SAST achieves better or comparable performance in terms of accuracy. Furthermore, the proposed algorithm runs at 27.63 FPS on SCUT-CTW1500 with a Hmean of 81.0% on a single NVIDIA Titan Xp graphics card, surpassing most of the existing segmentation-based methods.
+
+
+
 **2019-04-24**
 
 [1] Re-ID文章
